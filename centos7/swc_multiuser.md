@@ -33,7 +33,7 @@ umount /home
 ```
 
 Enable quota on the home partition by changing the mount options. Edit `/etc/fstab`; add `,uquota` to the mount options for the home parition.
-[!fstab.png](fstab.png)
+![/etc/fstab](fstab.png)
 
 Re-mount the home partition.
 ```bash
