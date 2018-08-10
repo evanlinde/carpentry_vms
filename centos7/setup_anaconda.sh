@@ -15,3 +15,9 @@ rm -f ${installer_file}
 PATH=${anaconda_installation_dir}/bin:$PATH
 conda install -y r rstudio r-tidyverse
 
+# Copy icons for jupyter and rstudio to /opt (for setting up shortcuts)
+rstudio_icon=$(find ${anaconda_installation_dir}/pkgs/rstudio-*/share/rstudio/ -maxdepth 1 -name 'rstudio.png')
+cp ${rstudio_icon} /opt/rstudio.png
+jupyter_icon=$(find ${anaconda_installation_dir}/pkgs/jupyterlab-*/info/ -maxdepth 1 -name 'icon.png')
+cp ${jupyter_icon} /opt/jupyter.png
+

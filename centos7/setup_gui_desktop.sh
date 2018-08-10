@@ -60,6 +60,9 @@ prog "Web browser" /usr/share/icons/gnome/16x16/apps/web-browser.png firefox ${h
 prog "File manager" /usr/share/icons/gnome/16x16/apps/file-manager.png pcmanfm-qt
 prog "Text editor" /usr/share/icons/gnome/16x16/apps/text-editor.png geany
 separator
+prog "Jupyter Notebook" /opt/jupyter.png jupyter notebook
+prog "Rstudio" /opt/rstudio.png rstudio
+separator
 prog "Rebuild program menu" /usr/share/icons/gnome/16x16/actions/edit-find-replace.png /usr/share/icewm/startup
 separator
 menufile Programs folder programs.autogen
