@@ -13,7 +13,5 @@ rm -f ${installer_file}
 
 # Install R stuff via conda
 PATH=${anaconda_installation_dir}/bin:$PATH
-conda install -y r
-conda install -y rstudio
-conda install -y r-tidyverse
+conda install -y r rstudio r-tidyverse
 

@@ -4,7 +4,7 @@
 source settings.sh
 
 # Install tomcat and the libguac daemon
-yum install tomcat guacd libguac libguac-client-rdp
+yum -y install tomcat guacd libguac libguac-client-rdp
 
 # Download the guacamole web app and set it up to be deployed by tomcat
 curl -L "${guacamole_war_url}" > ${guacamole_war_file}
@@ -12,6 +12,7 @@ cp ${guacamole_war_file} /usr/share/tomcat/webapps/
 
 # Install the singlerdp extension
 mkdir -p /usr/share/tomcat/.guacamole/extensions
+wget ${singlerdp_jar_url}
 cp ${singlerdp_jar_file} /usr/share/tomcat/.guacamole/extensions
 
 # Settings for the singlerdp extension
