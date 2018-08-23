@@ -7,11 +7,19 @@
 anaconda_installer_url="https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh"
 
 # Filename of the Anaconda installer
-# (get rid of the last slash and everything before it from ${installer_url})
+# (get rid of the last slash and everything before it from ${anaconda_installer_url})
 anaconda_installer_file="${anaconda_installer_url/*\/}"
 
 # Directory where Anaconda should be installed
 anaconda_installation_dir="/opt/anaconda3"
+
+# URL for the RStudio RPM installer
+# Only used for yum-based R setup (not for conda-based R setup)
+rstudio_rpm_url="https://download1.rstudio.org/rstudio-1.1.456-x86_64.rpm"
+
+# Filename of the RStudio RPM
+# (get rid of the last slash and everything before it from ${rstudio_rpm_url})
+rstudio_rpm_file="${rstudio_installer_url/*\/}"
 
 # Browser homepage
 homepage_url="https://osu-carpentry.github.io/"
