@@ -15,6 +15,7 @@ anaconda_installation_dir="/opt/anaconda3"
 
 # URL for the RStudio RPM installer
 # Only used for yum-based R setup (not for conda-based R setup)
+# Get the latest link from https://www.rstudio.com/products/rstudio/download/
 rstudio_rpm_url="https://download1.rstudio.org/rstudio-1.1.456-x86_64.rpm"
 
 # Filename of the RStudio RPM
