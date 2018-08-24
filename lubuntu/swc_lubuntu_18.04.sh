@@ -92,7 +92,7 @@ sudo R -e "install.packages(c('tidyverse','dbplyr','roxygen2'),repo='http://cran
 # Install OpenRefine (for Data Carpentry)
 # http://openrefine.org/download.html
 openrefine_url="https://github.com/OpenRefine/OpenRefine/releases/download/3.0-rc.1/openrefine-linux-3.0-rc.1.tar.gz"
-openrefine_tar_file="${openrefile_url/*\/}"
+openrefine_tar_file="${openrefine_url/*\/}"
 wget ${openrefine_url}
 tar -zxf ${openrefine_tar_file} -C "${HOME}"
 rm ${openrefine_tar_file}
