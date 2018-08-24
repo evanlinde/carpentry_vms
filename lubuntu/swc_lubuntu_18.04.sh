@@ -2,7 +2,8 @@
 
 #
 # Configure a fresh Lubuntu 18.04 installation for Software Carpentry
-# Also includes software needed for the Ecology lessons in Data Carpentry
+# Also includes software needed for the Ecology and Social Science
+# lessons from Data Carpentry
 #
 
 # Remove the GUI update manager so it doesn't prompt for updates
