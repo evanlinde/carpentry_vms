@@ -66,7 +66,7 @@ rm ${rstudio_deb_file}
 mkdir -p "${HOME}/.config/RStudio"
 cat << R_EOF > "${HOME}/.config/RStudio/desktop.ini"
 [General]
-font.fixedWidth=FreeMono
+font.fixedWidth=Liberation Mono
 R_EOF
 
 
