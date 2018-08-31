@@ -7,8 +7,8 @@ cd ~/Desktop
 [ -d "${LESSON}" ] && rm -rf "${LESSON}"
 mkdir "${LESSON}"
 cd "${LESSON}"
-wget http://swcarpentry.github.io/shell-novice/data/shell-novice-data.zip
-unzip shell-novice-data.zip
+wget http://swcarpentry.github.io/shell-novice/data/data-shell.zip
+unzip data-shell.zip
 
 
 # Download files for SQL lesson ("Using Databases and SQL")
