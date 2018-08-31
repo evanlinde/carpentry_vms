@@ -53,6 +53,9 @@ libzmq3-dev libssl-dev
 # Additional things for Data Carpentry
 libreoffice
 default-jre  # for OpenRefine
+
+# Data Carpentry Geospatial
+# gdal-bin gdal-data libgdal-dev libgeos-dev proj-bin proj-data libproj-dev udunits-bin libudunits2-0 libudunits2-data libudunits2-dev
 )
 # End of the apt package array.
 
@@ -90,6 +93,9 @@ sudo pip3 install plotnine
 # tidyverse and dbplyr for Data Carpentry
 # roxygen2 for Software carpentry
 sudo R -e "install.packages(c('tidyverse','dbplyr','roxygen2'),repo='http://cran.rstudio.com/')"
+## Packages for Data Carpentry Geospatial
+## Skipping dplyr and ggplot2 since they're already installed
+#R -e "install.packages(c('raster','rgdal','rasterVis','remotes','sf'), repos='http://cran.rstudio.com/')"
 
 
 # Install OpenRefine (for Data Carpentry)
