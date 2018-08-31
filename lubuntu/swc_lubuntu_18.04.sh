@@ -5,6 +5,9 @@
 # Also includes software needed for the Ecology and Social Science
 # lessons from Data Carpentry
 #
+# Run this script as a user with sudo access, but don't use sudo when
+# calling the script.
+#
 
 # Remove the GUI update manager so it doesn't prompt for updates
 sudo apt-get -y remove update-manager-core python3-distupgrade python3-update-manager ubuntu-release-upgrader-core
@@ -97,6 +100,8 @@ wget ${openrefine_url}
 tar -zxf ${openrefine_tar_file} -C "${HOME}"
 rm ${openrefine_tar_file}
 
+# Fix assistive technology exception when starting openrefine
+sudo sed -i '/^assistive_technologies/s/^/#/' /etc/java-11-openjdk/accessibility.properties
 
 
 # Setup automatic login for the current user (user should be "swc")
