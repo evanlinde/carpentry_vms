@@ -29,10 +29,7 @@ cd "${LESSON}"
 wget http://swcarpentry.github.io/python-novice-inflammation/data/python-novice-inflammation-data.zip
 unzip python-novice-inflammation-data.zip
 wget http://swcarpentry.github.io/python-novice-inflammation/code/python-novice-inflammation-code.zip
-# the code file doesn't contain a folder like the instructions say, so create one and extract into it
-mkdir code
-cd code
-unzip ../python-novice-inflammation-code.zip
+unzip python-novice-inflammation-code.zip
 
 
 # Download files for R inflammation lesson ("Programming with R")
