@@ -32,6 +32,16 @@ wget http://swcarpentry.github.io/python-novice-inflammation/code/python-novice-
 unzip python-novice-inflammation-code.zip
 
 
+# Download files for python gapminder lesson ("Plotting and Programming in Python")
+LESSON="python-novice-gapminder"
+cd ~/Desktop
+[ -d "${LESSON}" ] && rm -f "${LESSON}"
+mkdir "${LESSON}"
+cd "${LESSON}"
+wget http://swcarpentry.github.io/python-novice-gapminder/files/python-novice-gapminder-data.zip
+unzip python-novice-gapminder-data.zip
+
+
 # Download files for R inflammation lesson ("Programming with R")
 LESSON="r-novice-inflammation"
 cd ~/Desktop
